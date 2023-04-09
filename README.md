@@ -99,3 +99,34 @@ console.log(“You are not yet an adult.”);
 </ul>
 <p>Loops are a powerful tool in JavaScript and are essential for many types of programming tasks.</p>
 </details>
+<details> 
+<summary>Object literal notation</summary>
+<p>
+Object literal notation is a way to create an object in JavaScript by listing its properties and values inside curly braces. It’s a simple and common way to create objects in JavaScript.
+</p>
+</details>
+<details> 
+<summary>Primitive values</summary>
+<p>
+Primitive values in JavaScript are the basic data types, such as numbers, strings, booleans, null, and undefined. They are <a href="https://developer.mozilla.org/en-US/docs/Glossary/Immutable">immutable </a>and are stored directly in memory.
+</p>
+</details>
+<details> <summary>Objects in JavaScript</summary>
+
+<p>Objects in JavaScript are like containers that hold related data and functionality in key-value pairs. Imagine a box that contains things related to a particular thing, that’s what an object is. Each value in an object is called a property, and a property can be a primitive value like a string, number, or boolean, an object or even a function. Objects are widely used in JavaScript, and having a good understanding of objects is crucial for becoming a successful JavaScript developer.</p>
+
+<p>To create an object in JavaScript, we use the object literal notation. It looks like a set of braces enclosing key-value pairs, separated by commas. Here’s an example:</p>
+
+<pre><code>const zeeshan = { name: “Zeeshan”, age: 21, hobbies: [“reading”, “writing”, “coding”], greeting: function() { console.log("Hello, my name is " + this.name); } }; </code></pre>
+
+<p>In this example, we’ve created an object called zeeshan that has several properties, including name, age, hobbies, and greeting. The greeting property is a function that can be called on the object.</p>
+
+<p>You can access the properties of an object using dot notation or bracket notation. Here are some examples:</p>
+
+<pre><code> console.log(zeeshan.name); // Output: “Zeeshan” console.log(zeeshan[“age”]); // Output: 21 </code></pre>
+
+<p>You can also add or modify properties on an object using either dot notation or bracket notation. Here’s an example:</p>
+
+<pre><code> zeeshan.job = “Bechlor Student”; zeeshan[“location”] = “Pakistan”; </code></pre>
+
+<p>Objects in JavaScript are very powerful and can be used to represent complex data structures. Understanding how to create and manipulate objects is an essential skill for any JavaScript developer.</p> </details>
