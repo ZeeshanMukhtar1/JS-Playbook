@@ -137,3 +137,32 @@ Primitive values in JavaScript are the basic data types, such as numbers, string
 <pre><code> zeeshan.job = “Bechlor Student”; zeeshan[“location”] = “Pakistan”; </code></pre>
 
 <p>Objects in JavaScript are very powerful and can be used to represent complex data structures. Understanding how to create and manipulate objects is an essential skill for any JavaScript developer.</p> </details>
+<details> <summary>Strings</summary>
+A string is a sequence of characters enclosed in single quotes (‘’) or double quotes (“”). For example:
+<pre><code>
+const myString = 'Hello, world!'; // using string literal
+const anotherString = String('I am a string'); // using String() constructor 
+</code></pre>
+Strings are <a href="https://developer.mozilla.org/en-US/docs/Glossary/Immutable">immutable </a>, which means that their contents cannot be changed once created. However, you can create a new string based on the original string using string methods such as `slice()`, `concat()`, `replace()`, and others. For example:
+<pre><code>
+const myString = 'Hello, world!';
+const newString = myString.slice(0, 5); // returns 'Hello'
+const concatenatedString = myString.concat(' How are you?'); // returns 'Hello, world! How are you?'
+const replacedString = myString.replace('world', 'universe'); // returns 'Hello, universe!'
+</code></pre>
+You can also access individual characters of a string using bracket notation. For example:
+<pre><code>
+const myString = 'Hello, world!';
+const firstCharacter = myString[0]; // returns 'H'
+const lastCharacter = myString[myString.length - 1]; // returns '!'
+</code></pre>
+JavaScript provides many built-in string methods that you can use to manipulate and work with strings. Some of the most commonly used methods include `toUpperCase()`, `toLowerCase()`, `trim()`, `split()`, `charAt()`, and others. For example:
+<pre><code>
+const myString = ' Hello, World! ';
+const uppercaseString = myString.toUpperCase(); // returns ' HELLO, WORLD! '
+const lowercaseString = myString.toLowerCase(); // returns ' hello, world! '
+const trimmedString = myString.trim(); // returns 'Hello, World!'
+const splitString = myString.split(','); // returns [' Hello', ' World! ']
+const thirdCharacter = myString.charAt(2); // returns 'H'
+</code></pre>
+</details>
