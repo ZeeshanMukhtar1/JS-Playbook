@@ -9,6 +9,8 @@ Happy learning!
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/ZeshanMukhtar01)
 [![instagram](https://img.shields.io/badge/instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/zeshanmukhtar01/)
 
+## Basic
+
 <details>
   <summary>Introduction to JavaScript</summary>
   <p>JavaScript is a programming language that is used for creating interactive websites and web applications. It is used to add interactivity, dynamic content, and user interface effects to web pages.</p>
@@ -166,3 +168,75 @@ const splitString = myString.split(','); // returns [' Hello', ' World! ']
 const thirdCharacter = myString.charAt(2); // returns 'H'
 </code></pre>
 </details>
+<!-- arrays -->
+Sure, here’s an explanation of arrays in JavaScript with code snippets and markdown:
+
+<details> <summary>Arrays in JavaScript</summary> <p>
+
+In JavaScript, an array is a collection of values, which can be of any data type. Arrays can be created using the array literal notation [] or the Array() constructor function.
+
+<pre><code>
+// array literal notation
+const myArray = [1, 'two', true];
+
+// Array constructor function
+const anotherArray = new Array(1, 'two', true);
+</code></pre>
+
+You can access individual elements of an array using their index, which starts at 0 for the first element. You can also modify the value of an element by assigning a new value to its index.
+
+<pre><code>
+const myArray = ['apple', 'banana', 'orange'];
+
+// access individual elements
+const firstElement = myArray[0]; // 'apple'
+const thirdElement = myArray[2]; // 'orange'
+
+// modify element value
+myArray[1] = 'pear';
+console.log(myArray); // ['apple', 'pear', 'orange']
+</code></pre>
+
+Arrays in JavaScript are dynamic, which means you can add or remove elements from an array at any time. There are several built-in methods that you can use to modify and work with arrays. Here are some of the most commonly used array methods in JavaScript:
+
+- push(): adds one or more elements to the end of an array
+- pop(): removes and returns the last element of an array
+- shift(): removes and returns the first element of an array
+- unshift(): adds one or more elements to the beginning of an array
+- splice(): adds or removes elements from an array at a specified position
+- slice(): returns a new array with a portion of the original array
+
+Here are some examples of using these array methods:
+
+<pre><code>
+const myArray = ['apple', 'banana', 'orange'];
+
+// add elements to the end of an array
+myArray.push('pear', 'grape');
+console.log(myArray); // ['apple', 'banana', 'orange', 'pear', 'grape']
+
+// remove and return the last element of an array
+const lastElement = myArray.pop();
+console.log(lastElement); // 'grape'
+console.log(myArray); // ['apple', 'banana', 'orange', 'pear']
+
+// remove and return the first element of an array
+const firstElement = myArray.shift();
+console.log(firstElement); // 'apple'
+console.log(myArray); // ['banana', 'orange', 'pear']
+
+// add elements to the beginning of an array
+myArray.unshift('kiwi', 'mango');
+console.log(myArray); // ['kiwi', 'mango', 'banana', 'orange', 'pear']
+
+// remove elements from an array at a specified position
+const removedElements = myArray.splice(2, 2);
+console.log(removedElements); // ['banana', 'orange']
+console.log(myArray); // ['kiwi', 'mango', 'pear']
+
+// create a new array with a portion of the original array
+const newArray = myArray.slice(1, 3);
+console.log(newArray); // ['mango', 'pear']
+console.log(myArray); // ['kiwi', 'mango', 'pear']
+</code></pre>
+</p> </details>
