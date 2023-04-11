@@ -168,11 +168,7 @@ const splitString = myString.split(','); // returns [' Hello', ' World! ']
 const thirdCharacter = myString.charAt(2); // returns 'H'
 </code></pre>
 </details>
-<!-- arrays -->
-Sure, here’s an explanation of arrays in JavaScript with code snippets and markdown:
-
 <details> <summary>Arrays in JavaScript</summary> <p>
-
 In JavaScript, an array is a collection of values, which can be of any data type. Arrays can be created using the array literal notation [] or the Array() constructor function.
 
 <pre><code>
