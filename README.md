@@ -38,6 +38,17 @@ const PI = 3.14;
 </ul>
 </details>
 <details>
+    <summary>Type casting</summary>
+    <p>Type casting in JavaScript is like changing a toy into a different toy. When we write code, we use things called variables to store information. Sometimes we need to change the type of information in a variable. For example, we might have a number that looks like text, and we want to change it into a real number we can do math with. This is called type casting. JavaScript has special tools called functions that can help us change the type of information in a variable. Type casting is important because it helps us work with different kinds of information in our code and avoid mistakes.</p>
+    <code>
+    let myString = "10"; // a string that represents a number
+let myNumber = parseInt(myString); // convert string to integer
+
+console.log(myNumber); // output: 10
+</code>
+
+</details>
+<details>
 <summary>What is a function in JavaScript?</summary>
 <p>A function is a block of code that performs a specific task. It takes input in the form of arguments and returns output in the form of a return value. Functions allow you to reuse code, organize code into smaller, more manageable chunks, and make your code more modular and easier to understand.</p>
 
@@ -107,6 +118,25 @@ console.log(“You are not yet an adult.”);
 <li><strong>Do-While Loop:</strong> This loop is similar to a while loop, but it will always execute the code inside the curly braces at least once, even if the condition is false. For example: <code>let i = 0; do { console.log(i); i++; } while (i < 10);</code></li>
 </ul>
 <p>Loops are a powerful tool in JavaScript and are essential for many types of programming tasks.</p>
+</details>
+<details>
+  <summary>Control flow</summary>
+  <p>Imagine you are making a cake, and you have a recipe that tells you what ingredients to add and in what order.The recipe is like the control flow of your program. In JavaScript, the Control flow is a way of how your computer runs code from top to bottom. It starts from the first line and ends at the last line unless it hits any statementthat changes the control flow of the program such as loops, conditionals, etc.</p>
+  <code>
+  let age = 18;
+
+if (age >= 18) {
+
+console.log("You can vote!");
+
+} else {
+
+console.log("You are too young to vote.");
+
+    }
+
+</code>
+
 </details>
 <details> 
 <summary>Object literal notation</summary>
