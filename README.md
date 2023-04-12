@@ -9,7 +9,7 @@ Happy learning!
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/ZeshanMukhtar01)
 [![instagram](https://img.shields.io/badge/instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/zeshanmukhtar01/)
 
-## Basic
+## Mastering the Basics of JavaScript
 
 <details>
   <summary>Introduction to JavaScript</summary>
@@ -19,7 +19,7 @@ Happy learning!
 <summary>What is a variable in JavaScript?</summary>
 <p>A variable is a container for storing a value. In JavaScript, you can declare a variable using the <code>var</code>, <code>let</code>, or <code>const</code> keywords. For example:</p>
 
-<pre><code>var message = “Hello, world!”;
+<pre><code>var message = “Hello, Zeeshan!”;
 let count = 10;
 const PI = 3.14;
 </code></pre>
@@ -29,7 +29,7 @@ const PI = 3.14;
 <p>JavaScript supports several data types, including:</p>
 <ul>
 <li><strong>Numbers</strong>: Used for storing numeric values, such as <code>1</code>, <code>2.5</code>, or <code>-10</code>.</li>
-<li><strong>Strings</strong>: Used for storing text values, such as <code>“Hello, world!”</code> or <code>“123”</code>.</li>
+<li><strong>Strings</strong>: Used for storing text values, such as <code>“Hello, Zeeshan!”</code> or <code>“123”</code>.</li>
 <li><strong>Booleans</strong>: Used for storing true/false values, such as <code>true</code> or <code>false</code>.</li>
 <li><strong>Undefined</strong>: Used for uninitialized variables.</li>
 <li><strong>Null</strong>: Used to represent a null or empty value.</li>
@@ -122,14 +122,12 @@ console.log(“You are not yet an adult.”);
 <details>
   <summary>Control flow</summary>
   <p>Imagine you are making a cake, and you have a recipe that tells you what ingredients to add and in what order.The recipe is like the control flow of your program. In JavaScript, the Control flow is a way of how your computer runs code from top to bottom. It starts from the first line and ends at the last line unless it hits any statementthat changes the control flow of the program such as loops, conditionals, etc.</p>
-  <code>
-  let age = 18;
+<pre><code>let age = 18;
   if (age >= 18) {
   console.log("You can vote!");
   } else {
   console.log("You are too young to vote.");
-  }
-</code>
+  } </code></pre>
 </details>
 <details> 
 <summary>Object literal notation</summary>
@@ -165,29 +163,29 @@ Primitive values in JavaScript are the basic data types, such as numbers, string
 <details> <summary>Strings</summary>
 A string is a sequence of characters enclosed in single quotes (‘’) or double quotes (“”). For example:
 <pre><code>
-const myString = 'Hello, world!'; // using string literal
+const myString = 'Hello, Zeeshan!'; // using string literal
 const anotherString = String('I am a string'); // using String() constructor 
 </code></pre>
 Strings are <a href="https://developer.mozilla.org/en-US/docs/Glossary/Immutable">immutable </a>, which means that their contents cannot be changed once created. However, you can create a new string based on the original string using string methods such as `slice()`, `concat()`, `replace()`, and others. For example:
 <pre><code>
-const myString = 'Hello, world!';
+const myString = 'Hello, Zeeshan!';
 const newString = myString.slice(0, 5); // returns 'Hello'
-const concatenatedString = myString.concat(' How are you?'); // returns 'Hello, world! How are you?'
-const replacedString = myString.replace('world', 'universe'); // returns 'Hello, universe!'
+const concatenatedString = myString.concat(' How are you?'); // returns 'Hello, Zeeshan! How are you?'
+const replacedString = myString.replace('Zeeshan', 'universe'); // returns 'Hello, universe!'
 </code></pre>
 You can also access individual characters of a string using bracket notation. For example:
 <pre><code>
-const myString = 'Hello, world!';
+const myString = 'Hello, Zeeshan!';
 const firstCharacter = myString[0]; // returns 'H'
 const lastCharacter = myString[myString.length - 1]; // returns '!'
 </code></pre>
 JavaScript provides many built-in string methods that you can use to manipulate and work with strings. Some of the most commonly used methods include `toUpperCase()`, `toLowerCase()`, `trim()`, `split()`, `charAt()`, and others. For example:
 <pre><code>
-const myString = ' Hello, World! ';
-const uppercaseString = myString.toUpperCase(); // returns ' HELLO, WORLD! '
-const lowercaseString = myString.toLowerCase(); // returns ' hello, world! '
-const trimmedString = myString.trim(); // returns 'Hello, World!'
-const splitString = myString.split(','); // returns [' Hello', ' World! ']
+const myString = ' Hello, Zeeshan! ';
+const uppercaseString = myString.toUpperCase(); // returns ' HELLO, Zeeshan! '
+const lowercaseString = myString.toLowerCase(); // returns ' hello, Zeeshan! '
+const trimmedString = myString.trim(); // returns 'Hello, Zeeshan!'
+const splitString = myString.split(','); // returns [' Hello', ' Zeeshan! ']
 const thirdCharacter = myString.charAt(2); // returns 'H'
 </code></pre>
 </details>
@@ -259,3 +257,23 @@ console.log(newArray); // ['mango', 'pear']
 console.log(myArray); // ['kiwi', 'mango', 'pear']
 </code></pre>
 </p> </details>
+
+## Next Level JavaScript Techniques
+
+<details>
+    <summary>Hoisting</summary>
+    <p>Hoisting is a behavior in JavaScript that allows you to use variables and functions before they are actually declared in your code.
+Think of it like a magician who pulls a rabbit out of a hat. Just like the rabbit is magically pulled out of the hat, hoisting pulls variables and functions to the top of your code so they can be used even before they are defined.
+However, be careful when using hoisting because it can lead to confusion and errors in your code if you're not careful. So, it's always best to declare your variables and functions at the top of your code to avoid any unexpected behavior.</p> 
+<pre><code>console.log(myNumber); // undefined
+var myNumber = 10;
+</code></pre>
+
+<pre><code>console.log(myVariable); // output: undefined
+var myVariable = "Hi Zeeshan!";
+</code></pre>
+
+<p>In this example, we're trying to log the value of myVariable before we've assigned it a value. Normally, this would result in a ReferenceError, but because of hoisting, the variable declaration is moved to the top of its scope, and the output is undefined instead. This is because myVariable is still considered to exist, but has not yet been assigned a value.
+It's important to note that hoisting only moves variable and function declarations to the top of their scope, not their assignments. So in the above example, only the var myVariable declaration is hoisted, not the assignment of "Hi Zeeshan!"</p>
+
+</details>
