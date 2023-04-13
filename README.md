@@ -277,3 +277,42 @@ var myVariable = "Hi Zeeshan!";
 It's important to note that hoisting only moves variable and function declarations to the top of their scope, not their assignments. So in the above example, only the var myVariable declaration is hoisted, not the assignment of "Hi Zeeshan!"</p>
 
 </details>
+<details>
+    <summary>Scope and function stack</summary>
+    <p>Think of scope as the space where variables are accessible in your code. Imagine you have a room with a desk and a lamp. The desk is your scope, and the lamp is your variable. You can see the lamp because it's on the desk, but you can't see the lamp in another room because it's outside your scope.
+
+Now let's talk about function stack. It's like a stack of pancakes. When you call a function, it's like adding a new pancake to the top of the stack. And when the function finishes running, it's like removing the top pancake from the stack. This means that the last function you called is the first function that will finish running.
+
+So, scope is like the space where you can see your variables, and function stack is like a stack of pancakes where you keep track of the functions you call.</p>
+
+<pre><code>let name = "Zeeshan"; // Global scope
+
+function sayName() {
+  let name = "Kamran"; // Local scope
+  console.log(name);
+}
+
+sayName(); // Output: Kamran
+console.log(name); // Output: Zeeshan
+</code></pre>
+</details>
+<details>
+  <summary>Lexical scoping</summary>
+  <p>Lexical scoping is a way of determining the scope of a variable based on its position in the code. In other words, variables declared within a function are only accessible within that function, and variables declared outside of a function are accessible throughout the entire program</p>
+  <pre><code>let x = 10;
+
+function myFunction() {
+let y = 20;
+console.log(x); // Output: 10
+console.log(y); // Output: 20
+}
+
+myFunction();
+
+console.log(x); // Output: 10
+console.log(y); // Output: Uncaught ReferenceError: y is not defined
+</code></pre>
+
+<p>In this code, the variable `x` is declared outside of the function and is therefore accessible throughout the entire program. The variable `y` is declared within the `myFunction()` function and is only accessible within that function. If we try to access y outside of the function, we will get a `ReferenceError` because it is not defined in that scope.</p>
+
+</details>
