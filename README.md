@@ -316,3 +316,48 @@ console.log(y); // Output: Uncaught ReferenceError: y is not defined
 <p>In this code, the variable `x` is declared outside of the function and is therefore accessible throughout the entire program. The variable `y` is declared within the `myFunction()` function and is only accessible within that function. If we try to access y outside of the function, we will get a `ReferenceError` because it is not defined in that scope.</p>
 
 </details>
+<details>
+    <summary>Closures</summary>
+    <p>Imagine you have a treasure box, and you want to keep it safe from others. So, you lock it with a key, and only you have that key to open it. The treasure box is like a function, and the key is like a closure.</p>
+      <p>In JavaScript, closures are used to keep variables and functions private, just like a treasure box that is only accessible through a key. The key is nothing but a closure, which keeps the variables and functions inside a function safe and secure from the outer world.</p>
+        <p>When you create a closure, you create a small space where variables and functions can live, and it can be accessed by its inner functions. But these variables and functions are not accessible by the outer world, making it private.</p>
+          <p>For example, suppose you have a function that returns another function. The inner function can access the variables and functions of its outer function, but the outer function cannot access the variables and functions of the inner function.</p>
+
+<pre><code>
+function outer() {
+let x = 10;
+
+function inner() {
+console.log(x);
+}
+
+return inner;
+}
+
+let innerFunction = outer();
+
+innerFunction(); // output: 10
+
+</code></pre>
+  <p>In this example, the `outer` function returns the `inner` function. The `inner` function has access to the variable x which is declared in the `outer` function. Even though the `outer` function has finished executing and its variables should have been destroyed, the `inne`r function is still able to access and use the value of `x`. This is possible because of closures.</p>
+
+</details>
+<details>
+    <summary>Strict Mode</summary>
+    <p>Strict mode is a way to write safer and more reliable code in JavaScript. It helps prevent mistakes and potential bugs that can occur when writing JavaScript code. When strict mode is enabled, certain actions that were previously ignored or caused errors will now trigger an error instead</p>
+    <p>For example, strict mode prevents the use of undeclared variables, which can cause issues in your code. It also disallows certain syntax that is considered dangerous or problematic.
+    </p>
+    <p>To enable strict mode, you simply add the string "use strict" at the beginning of your JavaScript file or function. Once enabled, you cannot disable strict mode for that file or function
+    </p>
+    <pre><code>
+'use strict'; // Enable strict mode
+
+function myFunction() {
+x = 3.14; // Throws an error in strict mode (variable x is not declared)
+console.log(x);
+}
+
+myFunction()
+</code></pre>
+
+</details>
