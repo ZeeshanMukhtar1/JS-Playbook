@@ -361,3 +361,26 @@ myFunction()
 </code></pre>
 
 </details>
+
+<details> <summary>Using "this" keyword</summary> <p> Let's say you have a car object in JavaScript that has properties such as "make", "model", and "year", and a method called "startEngine". You can use the "this" keyword in the "startEngine" method to refer to the current car object and modify its properties accordingly. Here's an example: </p> <pre><code> const car = { make: "Toyota", model: "Corolla", year: 2022, startEngine: function() { console.log(Starting engine for ${this.year} ${this.make} ${this.model}...); // code to start the engine } };
+
+car.startEngine();
+
+</code></pre> <p> In this example, the `this` keyword is used to refer to the current car object inside the `startEngine` method. When the method is called using the `car.startEngine()` syntax, the value of `this` is set to the `car` object. The method then uses the `this` keyword to access the `year`, `make`, and `model` properties of the `car` object to display a message in the console indicating that the engine is starting for that specific car. </p> </details>
+
+<details> <summary>Promises in JavaScript</summary>
+<p>A Promise is like a promise someone makes to you. It's like when your friend promises to give you a toy tomorrow. You trust your friend, but you don't have the toy yet. You have to wait until tomorrow to get it. In the meantime, you can do other things, like play with your other toys or go to sleep.</p>
+
+<p>In JavaScript, a Promise is similar. It's like a promise that some code makes to you. The code promises to give you a value, but you don't have it yet. You have to wait until the code finishes running to get the value. In the meantime, you can do other things in your code.</p>
+
+<p>Promises have three states: pending, fulfilled, and rejected. When a Promise is pending, it means that the code hasn't finished running yet. When a Promise is fulfilled, it means that the code has finished running successfully and has given you a value. When a Promise is rejected, it means that the code has finished running unsuccessfully and has given you an error.</p>
+
+<p>Here's an example of using Promises in JavaScript:</p>
+
+<pre><code> const fetchData = () => { return new Promise((resolve, reject) => { // code to fetch data asynchronously // resolve with data if successful // reject with error if unsuccessful }); };
+
+fetchData() .then(data => { // do something with data when it's available }) .catch(error => { // handle error if something went wrong }); </code></pre>
+
+<p>In this example, the <code>fetchData</code> function returns a Promise that fetches data asynchronously. When the Promise is fulfilled, the <code>.then</code> method is called, and you can do something with the data. If the Promise is rejected, the <code>.catch</code> method is called, and you can handle the error.</p>
+
+</details>
