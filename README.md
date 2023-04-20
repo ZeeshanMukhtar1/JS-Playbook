@@ -120,7 +120,7 @@ console.log(“You are not yet an adult.”);
 <p>Loops are a powerful tool in JavaScript and are essential for many types of programming tasks.</p>
 </details>
 <details>
-  <summary>Control flow</summary>
+  <summary>About Control flow of JavaScript</summary>
   <p>Imagine you are making a cake, and you have a recipe that tells you what ingredients to add and in what order.The recipe is like the control flow of your program. In JavaScript, the Control flow is a way of how your computer runs code from top to bottom. It starts from the first line and ends at the last line unless it hits any statementthat changes the control flow of the program such as loops, conditionals, etc.</p>
 <pre><code>let age = 18;
   if (age >= 18) {
