@@ -384,3 +384,5 @@ fetchData() .then(data => { // do something with data when it's available }) .ca
 <p>In this example, the <code>fetchData</code> function returns a Promise that fetches data asynchronously. When the Promise is fulfilled, the <code>.then</code> method is called, and you can do something with the data. If the Promise is rejected, the <code>.catch</code> method is called, and you can handle the error.</p>
 
 </details>
+
+If you found this repo helpful, please consider giving it a star 🌟 to help other students discover it and benefit from it as well. Thank you for your support!
