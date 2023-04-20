@@ -384,5 +384,28 @@ fetchData() .then(data => { // do something with data when it's available }) .ca
 <p>In this example, the <code>fetchData</code> function returns a Promise that fetches data asynchronously. When the Promise is fulfilled, the <code>.then</code> method is called, and you can do something with the data. If the Promise is rejected, the <code>.catch</code> method is called, and you can handle the error.</p>
 
 </details>
+<details>
+    <summary>Callbacks</summary>
+    <p>A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action</p>   
+    <pre><code>
+    function add(a, b, callback) {
+  let result = a + b;
+  callback(result);
+}
+
+function displayResult(result) {
+console.log(`The result is ${result}.`);
+}
+
+add(5, 3, displayResult);
+</code></pre>
+
+ <p>In this example, the `add` function takes in two numbers `a` and b`, and a `callback` function callback. The `add` function computes the sum of `a` and `b`, and then calls the `callback` function with the result. </p>
+<p>
+The `displayResult` function is an example of a callback function. It takes in the result parameter and logs it to the console. </p>
+<p>
+Finally, we call the `add` function with the numbers 5 and 3, as well as the `displayResult` function as the callback. When ad`d computes the sum of 5 and 3, it calls the `displayResult` function with the result of 8. The `displayResult` function then logs "The result is 8." to the console.</p>
+
+</details>
 
 If you found this repo helpful, please consider giving it a star 🌟 to help other students discover it and benefit from it as well. Thank you for your support!
