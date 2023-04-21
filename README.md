@@ -408,7 +408,7 @@ Finally, we call the `add` function with the numbers 5 and 3, as well as the `di
 
 </details>
 
-<details><summary>Async/Await</summary></details>
+<details><summary>Async/Await</summary>
 <p>In JavaScript, we sometimes need to perform tasks that take time to complete, such as fetching data from a remote server or waiting for a user to interact with a web page. These tasks are usually performed asynchronously, which means that the program does not wait for them to complete before moving on to the next task.</p>
 <p>Async/await is a feature in JavaScript that allows you to write asynchronous code that looks like synchronous code. It makes your code easier to read and understand by simplifying the syntax for handling asynchronous operations.</p>
 
@@ -434,5 +434,7 @@ getData()
     console.error(error);
   });
 ```
+
+</details>
 
 If you found this repo helpful, please consider giving it a star 🌟 to help other students discover it and benefit from it as well. Thank you for your support!
