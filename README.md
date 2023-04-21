@@ -1,4 +1,4 @@
-🚀 About this Repository
+# 🚀 About this Repository
 
 Welcome to our JavaScript Playbook, designed to help you learn JavaScript from scratch with easy-to-understand code snippets and examples. This repository is a collection of learning resources, including cheat sheets, code snippets, and helpful tips that will guide you through the basics and enhance your skills in JavaScript. As a front-end developer, I’ve compiled these resources to help me in my journey to master the language, and I’m sharing them with you. Let’s learn together!
 
@@ -129,13 +129,13 @@ console.log(“You are not yet an adult.”);
   console.log("You are too young to vote.");
   } </code></pre>
 </details>
-<details> 
+<details>
 <summary>Object literal notation</summary>
 <p>
 Object literal notation is a way to create an object in JavaScript by listing its properties and values inside curly braces. It’s a simple and common way to create objects in JavaScript.
 </p>
 </details>
-<details> 
+<details>
 <summary>Primitive values</summary>
 <p>
 Primitive values in JavaScript are the basic data types, such as numbers, strings, booleans, null, and undefined. They are <a href="https://developer.mozilla.org/en-US/docs/Glossary/Immutable">immutable </a>and are stored directly in memory.
@@ -164,7 +164,7 @@ Primitive values in JavaScript are the basic data types, such as numbers, string
 A string is a sequence of characters enclosed in single quotes (‘’) or double quotes (“”). For example:
 <pre><code>
 const myString = 'Hello, Zeeshan!'; // using string literal
-const anotherString = String('I am a string'); // using String() constructor 
+const anotherString = String('I am a string'); // using String() constructor
 </code></pre>
 Strings are <a href="https://developer.mozilla.org/en-US/docs/Glossary/Immutable">immutable </a>, which means that their contents cannot be changed once created. However, you can create a new string based on the original string using string methods such as `slice()`, `concat()`, `replace()`, and others. For example:
 <pre><code>
@@ -264,7 +264,7 @@ console.log(myArray); // ['kiwi', 'mango', 'pear']
     <summary>Hoisting</summary>
     <p>Hoisting is a behavior in JavaScript that allows you to use variables and functions before they are actually declared in your code.
 Think of it like a magician who pulls a rabbit out of a hat. Just like the rabbit is magically pulled out of the hat, hoisting pulls variables and functions to the top of your code so they can be used even before they are defined.
-However, be careful when using hoisting because it can lead to confusion and errors in your code if you're not careful. So, it's always best to declare your variables and functions at the top of your code to avoid any unexpected behavior.</p> 
+However, be careful when using hoisting because it can lead to confusion and errors in your code if you're not careful. So, it's always best to declare your variables and functions at the top of your code to avoid any unexpected behavior.</p>
 <pre><code>console.log(myNumber); // undefined
 var myNumber = 10;
 </code></pre>
@@ -386,7 +386,7 @@ fetchData() .then(data => { // do something with data when it's available }) .ca
 </details>
 <details>
     <summary>Callbacks</summary>
-    <p>A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action</p>   
+    <p>A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action</p>
     <pre><code>
     function add(a, b, callback) {
   let result = a + b;
@@ -407,5 +407,32 @@ The `displayResult` function is an example of a callback function. It takes in t
 Finally, we call the `add` function with the numbers 5 and 3, as well as the `displayResult` function as the callback. When ad`d computes the sum of 5 and 3, it calls the `displayResult` function with the result of 8. The `displayResult` function then logs "The result is 8." to the console.</p>
 
 </details>
+
+<details><summary>Async/Await</summary></details>
+<p>In JavaScript, we sometimes need to perform tasks that take time to complete, such as fetching data from a remote server or waiting for a user to interact with a web page. These tasks are usually performed asynchronously, which means that the program does not wait for them to complete before moving on to the next task.</p>
+<p>Async/await is a feature in JavaScript that allows you to write asynchronous code that looks like synchronous code. It makes your code easier to read and understand by simplifying the syntax for handling asynchronous operations.</p>
+
+```javascript
+// Define an asynchronous function called `getData`
+async function getData() {
+  // Wait for the response from the API using `fetch`
+  const response = await fetch('https://api.example.com/data');
+  // Wait for the JSON data to be extracted from the response
+  const data = await response.json();
+  // Return the data
+  return data;
+}
+
+// Call the `getData` function and handle the data once it is available
+getData()
+  .then((data) => {
+    // Print the data to the console
+    console.log(data);
+  })
+  .catch((error) => {
+    // Handle any errors that occur during the asynchronous operation
+    console.error(error);
+  });
+```
 
 If you found this repo helpful, please consider giving it a star 🌟 to help other students discover it and benefit from it as well. Thank you for your support!
