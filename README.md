@@ -295,7 +295,22 @@ function sayName() {
 sayName(); // Output: Kamran
 console.log(name); // Output: Zeeshan
 </code></pre>
+</details> 
+<details><summary>Javascript chrome dev tools</summary>
+<p>Chrome DevTools is a set of web developer tools built directly into the Google Chrome browser. It allows developers to easily debug and profile JavaScript code, as well as inspect and modify the DOM and CSS of a web page.</p> 
+<p>To access Chrome DevTools in Google Chrome, follow these steps:
+To access Chrome DevTools in Google Chrome, you need to open the browser, navigate to the desired web page, right-click on the page and select "Inspect" from the context menu. Alternatively, you can use the keyboard shortcut Ctrl+Shift+I (Windows, Linux) or Cmd+Opt+I (Mac). This will open the DevTools window, usually located at the bottom of the browser window.</p>
+  
+-  <b>Console</b> This tab allows you to view and interact with the JavaScript console. You can log messages, debug errors, and run JavaScript commands directly in the console.
+
+- <b>Elements</b> The elements tab allows you to inspect and modify the HTML and CSS of a web page. You can also use it to view and modify the DOM and CSS in real-time.
+
+- <b>Sources</b> This tab is where you can view and debug your JavaScript code. You can set breakpoints, step through your code, and inspect variables and objects.
+
+- <b>Network</b> The network tab allows you to monitor the network activity of a web page. You can view the requests and responses, as well as performance metrics such as load time and file size.
+
 </details>
+
 <details>
   <summary>Lexical scoping</summary>
   <p>Lexical scoping is a way of determining the scope of a variable based on its position in the code. In other words, variables declared within a function are only accessible within that function, and variables declared outside of a function are accessible throughout the entire program</p>
