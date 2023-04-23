@@ -452,4 +452,76 @@ getData()
 
 </details>
 
+<details><summary>Modules</summary>
+<p>Modules are essentially reusable pieces of code that can be exported from one file and imported into another. They allow developers to break their code into smaller, more manageable pieces and organize their projects more effectively.</p>
+<p>Suppose you have two files: `main.js` and `helper.js`. In` helper.js`, you define a function called `addNumber`s that adds two numbers together and `returns` the result:</p>
+
+```javascript
+// helper.js
+function addNumbers(a, b) {
+  return a + b;
+}
+
+export { addNumbers };
+```
+
+```javascript
+// main.js
+import { addNumbers } from './helper.js';
+
+console.log(addNumbers(2, 3)); // Output: 5
+```
+
+<p>There are two types of exports: named exports and default exports. In the above example, we used a named export, where we explicitly exported the addNumbers function using the export keyword.</p>
+
+<p>Named exports are used when you want to export multiple functions or objects from a module, and you want to explicitly name them when you import them in another file.</p>
+
+```javascript
+// helper.js
+export function addNumbers(a, b) {
+  return a + b;
+}
+
+export function subtractNumbers(a, b) {
+  return a - b;
+}
+```
+
+<p>In this code, we're exporting two functions, `addNumbers` and `subtractNumbers`, from `helper.js` using `named exports`.
+
+In main.js, we can then import these functions individually using their names:</p>
+
+```javascript
+// main.js
+import { addNumbers, subtractNumbers } from './helper.js';
+
+console.log(addNumbers(2, 3)); // Output: 5
+console.log(subtractNumbers(5, 3)); // Output: 2
+```
+
+<p>On the other hand, default exports are used when you want to export a single function or object from a module, and you don't care what name it's imported as.</p>
+
+```javascript
+// helper.js
+export default function addNumbers(a, b) {
+  return a + b;
+}
+```
+
+<p>
+In this code, we're exporting a single function, addNumbers, from helper.js using a default export.
+
+In main.js, we can then import this function using any name we like:
+
+</p>
+
+```javascript
+// main.js
+import myFunction from './helper.js';
+
+console.log(myFunction(2, 3)); // Output: 5
+```
+
+</details>
+
 If you found this repo helpful, please consider giving it a star 🌟 to help other students discover it and benefit from it as well. Thank you for your support!
