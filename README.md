@@ -19,10 +19,12 @@ Happy learning!
 <summary>What is a variable in JavaScript?</summary>
 <p>A variable is a container for storing a value. In JavaScript, you can declare a variable using the <code>var</code>, <code>let</code>, or <code>const</code> keywords. For example:</p>
 
-<pre><code>var message = “Hello, Zeeshan!”;
+```javascript
+var message = “Hello, Zeeshan!”;
 let count = 10;
 const PI = 3.14;
-</code></pre>
+```
+
 </details>
 <details>
 <summary>What are data types in JavaScript?</summary>
@@ -40,12 +42,16 @@ const PI = 3.14;
 <details>
     <summary>Type casting</summary>
     <p>Type casting in JavaScript is like changing a toy into a different toy. When we write code, we use things called variables to store information. Sometimes we need to change the type of information in a variable. For example, we might have a number that looks like text, and we want to change it into a real number we can do math with. This is called type casting. JavaScript has special tools called functions that can help us change the type of information in a variable. Type casting is important because it helps us work with different kinds of information in our code and avoid mistakes.</p>
-    <code>
-    let myString = "10"; // a string that represents a number
+    
+   
+```javascript
+ let myString = "10"; // a string that represents a number
 let myNumber = parseInt(myString); // convert string to integer
 
 console.log(myNumber); // output: 10
-</code>
+
+````
+
 
 </details>
 <details>
@@ -54,17 +60,22 @@ console.log(myNumber); // output: 10
 
 <p>Here is an example of a function that takes two arguments and returns their sum:</p>
 
-<pre><code>function addNumbers(num1, num2) {
+
+```javascript
+function addNumbers(num1, num2) {
 let sum = num1 + num2;
 return sum;
 }
-</code></pre>
+```
 
 <p>You can call this function by passing in two numbers:</p>
 
-<pre><code>let result = addNumbers(5, 10);
+
+```javascript
+let result = addNumbers(5, 10);
 console.log(result); // Output: 15
-</code></pre>
+```
+
 
 <p>In this example, the <code>addNumbers()</code> function takes two arguments, <code>num1</code> and <code>num2</code>, adds them together, and returns the sum.</p>
 </details>
@@ -72,29 +83,37 @@ console.log(result); // Output: 15
 <summary>How do you declare a function in JavaScript?</summary>
 <p>You can declare a function in JavaScript using the <code>function</code> keyword, followed by the function name and any parameters. For example:</p>
 
-<pre><code>function sayHello(name) {
+
+```javascript
+function sayHello(name) {
 console.log("Hello, " + name + “!”);
 }
-</code></pre>
+```
+
 
 <p>You can then call the function by passing in any required arguments, like this:</p>
 
-<pre><code>sayHello(Zeeshan);
+
+```javascript
+sayHello(Zeeshan);
 // Output: “Hello, Zeeshan!”
-</code></pre>
+```
+
 </details>
 <details>
 <summary>What is a conditional statement in JavaScript?</summary>
 <p>A conditional statement allows you to execute different code depending on whether a certain condition is true or false. The most common conditional statement in JavaScript is the <code>if</code> statement. For example:</p>
 
-<pre><code>let age = 18;
+```javascript
+let age = 18;
 
 if (age >= 18) {
 console.log(“You are an adult!”);
 } else {
 console.log(“You are not yet an adult.”);
 }
-</code></pre>
+```
+
 
 <p>In this example, the <code>if</code> statement checks whether the <code>age</code> variable is greater than or equal to <code>18</code>. If it is, the first code block is executed, and if not, the second code block is executed.</p>
 </details>
@@ -122,12 +141,15 @@ console.log(“You are not yet an adult.”);
 <details>
   <summary>About Control flow of JavaScript</summary>
   <p>Imagine you are making a cake, and you have a recipe that tells you what ingredients to add and in what order.The recipe is like the control flow of your program. In JavaScript, the Control flow is a way of how your computer runs code from top to bottom. It starts from the first line and ends at the last line unless it hits any statementthat changes the control flow of the program such as loops, conditionals, etc.</p>
-<pre><code>let age = 18;
+
+```javascript
+let age = 18;
   if (age >= 18) {
   console.log("You can vote!");
   } else {
   console.log("You are too young to vote.");
-  } </code></pre>
+  }
+```
 </details>
 <details>
 <summary>Object literal notation</summary>
@@ -147,62 +169,86 @@ Primitive values in JavaScript are the basic data types, such as numbers, string
 
 <p>To create an object in JavaScript, we use the object literal notation. It looks like a set of braces enclosing key-value pairs, separated by commas. Here’s an example:</p>
 
-<pre><code>const zeeshan = { name: “Zeeshan”, age: 21, hobbies: [“reading”, “writing”, “coding”], greeting: function() { console.log("Hello, my name is " + this.name); } }; </code></pre>
+```javascript
+const zeeshan = { name: “Zeeshan”,
+ age: 21,
+  hobbies: [“reading”, “writing”, “coding”],
+  greeting: function() {
+    console.log("Hello, my name is " + this.name);
+     } };
+```
 
-<p>In this example, we’ve created an object called zeeshan that has several properties, including name, age, hobbies, and greeting. The greeting property is a function that can be called on the object.</p>
+<p>In this example, we’ve created an object called `zeeshan` that has several properties, including `name`, `age`, `hobbies`, and `greeting`. The `greeting` property is a `function` that can be called on the `object`.</p>
 
 <p>You can access the properties of an object using dot notation or bracket notation. Here are some examples:</p>
 
-<pre><code> console.log(zeeshan.name); // Output: “Zeeshan” console.log(zeeshan[“age”]); // Output: 21 </code></pre>
+```javascript
+ console.log(zeeshan.name); // Output: “Zeeshan”
+console.log(zeeshan[“age”]); // Output: 21
 
+```
 <p>You can also add or modify properties on an object using either dot notation or bracket notation. Here’s an example:</p>
 
-<pre><code> zeeshan.job = “Bechlor Student”; zeeshan[“location”] = “Pakistan”; </code></pre>
+```javascript
+ zeeshan.job = “Bechlor Student”;
+ zeeshan[“location”] = “Pakistan”;
 
+```
 <p>Objects in JavaScript are very powerful and can be used to represent complex data structures. Understanding how to create and manipulate objects is an essential skill for any JavaScript developer.</p> </details>
 <details> <summary>Strings</summary>
 A string is a sequence of characters enclosed in single quotes (‘’) or double quotes (“”). For example:
-<pre><code>
+
+```javascript
 const myString = 'Hello, Zeeshan!'; // using string literal
 const anotherString = String('I am a string'); // using String() constructor
-</code></pre>
+```
+
 Strings are <a href="https://developer.mozilla.org/en-US/docs/Glossary/Immutable">immutable </a>, which means that their contents cannot be changed once created. However, you can create a new string based on the original string using string methods such as `slice()`, `concat()`, `replace()`, and others. For example:
-<pre><code>
+
+```javascript
 const myString = 'Hello, Zeeshan!';
 const newString = myString.slice(0, 5); // returns 'Hello'
 const concatenatedString = myString.concat(' How are you?'); // returns 'Hello, Zeeshan! How are you?'
 const replacedString = myString.replace('Zeeshan', 'universe'); // returns 'Hello, universe!'
-</code></pre>
+```
+
 You can also access individual characters of a string using bracket notation. For example:
-<pre><code>
+
+```javascript
 const myString = 'Hello, Zeeshan!';
 const firstCharacter = myString[0]; // returns 'H'
 const lastCharacter = myString[myString.length - 1]; // returns '!'
-</code></pre>
+```
+
 JavaScript provides many built-in string methods that you can use to manipulate and work with strings. Some of the most commonly used methods include `toUpperCase()`, `toLowerCase()`, `trim()`, `split()`, `charAt()`, and others. For example:
-<pre><code>
+
+```javascript
 const myString = ' Hello, Zeeshan! ';
 const uppercaseString = myString.toUpperCase(); // returns ' HELLO, Zeeshan! '
 const lowercaseString = myString.toLowerCase(); // returns ' hello, Zeeshan! '
 const trimmedString = myString.trim(); // returns 'Hello, Zeeshan!'
 const splitString = myString.split(','); // returns [' Hello', ' Zeeshan! ']
 const thirdCharacter = myString.charAt(2); // returns 'H'
-</code></pre>
+```
+
 </details>
 <details> <summary>Arrays in JavaScript</summary> <p>
 In JavaScript, an array is a collection of values, which can be of any data type. Arrays can be created using the array literal notation [] or the Array() constructor function.
 
-<pre><code>
+
+```javascript
 // array literal notation
 const myArray = [1, 'two', true];
 
 // Array constructor function
 const anotherArray = new Array(1, 'two', true);
-</code></pre>
+```
+
 
 You can access individual elements of an array using their index, which starts at 0 for the first element. You can also modify the value of an element by assigning a new value to its index.
 
-<pre><code>
+
+```javascript
 const myArray = ['apple', 'banana', 'orange'];
 
 // access individual elements
@@ -212,7 +258,8 @@ const thirdElement = myArray[2]; // 'orange'
 // modify element value
 myArray[1] = 'pear';
 console.log(myArray); // ['apple', 'pear', 'orange']
-</code></pre>
+```
+
 
 Arrays in JavaScript are dynamic, which means you can add or remove elements from an array at any time. There are several built-in methods that you can use to modify and work with arrays. Here are some of the most commonly used array methods in JavaScript:
 
@@ -224,8 +271,9 @@ Arrays in JavaScript are dynamic, which means you can add or remove elements fro
 - slice(): returns a new array with a portion of the original array
 
 Here are some examples of using these array methods:
+```javascript
 
-<pre><code>
+
 const myArray = ['apple', 'banana', 'orange'];
 
 // add elements to the end of an array
@@ -255,7 +303,8 @@ console.log(myArray); // ['kiwi', 'mango', 'pear']
 const newArray = myArray.slice(1, 3);
 console.log(newArray); // ['mango', 'pear']
 console.log(myArray); // ['kiwi', 'mango', 'pear']
-</code></pre>
+```
+
 </p> </details>
 
 ## Next Level JavaScript Techniques
@@ -295,12 +344,12 @@ function sayName() {
 sayName(); // Output: Kamran
 console.log(name); // Output: Zeeshan
 </code></pre>
-</details> 
+</details>
 <details><summary>Javascript chrome dev tools</summary>
-<p>Chrome DevTools is a set of web developer tools built directly into the Google Chrome browser. It allows developers to easily debug and profile JavaScript code, as well as inspect and modify the DOM and CSS of a web page.</p> 
+<p>Chrome DevTools is a set of web developer tools built directly into the Google Chrome browser. It allows developers to easily debug and profile JavaScript code, as well as inspect and modify the DOM and CSS of a web page.</p>
 <p>To access Chrome DevTools in Google Chrome, follow these steps:
 To access Chrome DevTools in Google Chrome, you need to open the browser, navigate to the desired web page, right-click on the page and select "Inspect" from the context menu. Alternatively, you can use the keyboard shortcut Ctrl+Shift+I (Windows, Linux) or Cmd+Opt+I (Mac). This will open the DevTools window, usually located at the bottom of the browser window.</p>
-  
+
 -  <b>Console</b> This tab allows you to view and interact with the JavaScript console. You can log messages, debug errors, and run JavaScript commands directly in the console.
 
 - <b>Elements</b> The elements tab allows you to inspect and modify the HTML and CSS of a web page. You can also use it to view and modify the DOM and CSS in real-time.
@@ -448,7 +497,7 @@ getData()
     // Handle any errors that occur during the asynchronous operation
     console.error(error);
   });
-```
+````
 
 </details>
 
