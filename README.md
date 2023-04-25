@@ -314,13 +314,18 @@ console.log(myArray); // ['kiwi', 'mango', 'pear']
     <p>Hoisting is a behavior in JavaScript that allows you to use variables and functions before they are actually declared in your code.
 Think of it like a magician who pulls a rabbit out of a hat. Just like the rabbit is magically pulled out of the hat, hoisting pulls variables and functions to the top of your code so they can be used even before they are defined.
 However, be careful when using hoisting because it can lead to confusion and errors in your code if you're not careful. So, it's always best to declare your variables and functions at the top of your code to avoid any unexpected behavior.</p>
-<pre><code>console.log(myNumber); // undefined
-var myNumber = 10;
-</code></pre>
 
-<pre><code>console.log(myVariable); // output: undefined
+```javascript
+console.log(myNumber); // undefined
+var myNumber = 10;
+```
+
+
+```javascript
+console.log(myVariable); // output: undefined
 var myVariable = "Hi Zeeshan!";
-</code></pre>
+```
+
 
 <p>In this example, we're trying to log the value of myVariable before we've assigned it a value. Normally, this would result in a ReferenceError, but because of hoisting, the variable declaration is moved to the top of its scope, and the output is undefined instead. This is because myVariable is still considered to exist, but has not yet been assigned a value.
 It's important to note that hoisting only moves variable and function declarations to the top of their scope, not their assignments. So in the above example, only the var myVariable declaration is hoisted, not the assignment of "Hi Zeeshan!"</p>
@@ -334,7 +339,8 @@ Now let's talk about function stack. It's like a stack of pancakes. When you cal
 
 So, scope is like the space where you can see your variables, and function stack is like a stack of pancakes where you keep track of the functions you call.</p>
 
-<pre><code>let name = "Zeeshan"; // Global scope
+```javascript
+let name = "Zeeshan"; // Global scope
 
 function sayName() {
   let name = "Kamran"; // Local scope
@@ -343,7 +349,8 @@ function sayName() {
 
 sayName(); // Output: Kamran
 console.log(name); // Output: Zeeshan
-</code></pre>
+```
+
 </details>
 <details><summary>Javascript chrome dev tools</summary>
 <p>Chrome DevTools is a set of web developer tools built directly into the Google Chrome browser. It allows developers to easily debug and profile JavaScript code, as well as inspect and modify the DOM and CSS of a web page.</p>
@@ -363,7 +370,9 @@ To access Chrome DevTools in Google Chrome, you need to open the browser, naviga
 <details>
   <summary>Lexical scoping</summary>
   <p>Lexical scoping is a way of determining the scope of a variable based on its position in the code. In other words, variables declared within a function are only accessible within that function, and variables declared outside of a function are accessible throughout the entire program</p>
-  <pre><code>let x = 10;
+
+```javascript
+let x = 10;
 
 function myFunction() {
 let y = 20;
@@ -375,7 +384,8 @@ myFunction();
 
 console.log(x); // Output: 10
 console.log(y); // Output: Uncaught ReferenceError: y is not defined
-</code></pre>
+```
+
 
 <p>In this code, the variable `x` is declared outside of the function and is therefore accessible throughout the entire program. The variable `y` is declared within the `myFunction()` function and is only accessible within that function. If we try to access y outside of the function, we will get a `ReferenceError` because it is not defined in that scope.</p>
 
@@ -387,7 +397,8 @@ console.log(y); // Output: Uncaught ReferenceError: y is not defined
         <p>When you create a closure, you create a small space where variables and functions can live, and it can be accessed by its inner functions. But these variables and functions are not accessible by the outer world, making it private.</p>
           <p>For example, suppose you have a function that returns another function. The inner function can access the variables and functions of its outer function, but the outer function cannot access the variables and functions of the inner function.</p>
 
-<pre><code>
+
+```javascript
 function outer() {
 let x = 10;
 
@@ -401,8 +412,9 @@ return inner;
 let innerFunction = outer();
 
 innerFunction(); // output: 10
+```
 
-</code></pre>
+
   <p>In this example, the `outer` function returns the `inner` function. The `inner` function has access to the variable x which is declared in the `outer` function. Even though the `outer` function has finished executing and its variables should have been destroyed, the `inne`r function is still able to access and use the value of `x`. This is possible because of closures.</p>
 
 </details>
@@ -413,7 +425,8 @@ innerFunction(); // output: 10
     </p>
     <p>To enable strict mode, you simply add the string "use strict" at the beginning of your JavaScript file or function. Once enabled, you cannot disable strict mode for that file or function
     </p>
-    <pre><code>
+
+```javascript
 'use strict'; // Enable strict mode
 
 function myFunction() {
@@ -422,7 +435,8 @@ console.log(x);
 }
 
 myFunction()
-</code></pre>
+```
+
 
 </details>
 
@@ -441,9 +455,13 @@ car.startEngine();
 
 <p>Here's an example of using Promises in JavaScript:</p>
 
-<pre><code> const fetchData = () => { return new Promise((resolve, reject) => { // code to fetch data asynchronously // resolve with data if successful // reject with error if unsuccessful }); };
+```javascript
+const fetchData = () => {
+  return new Promise((resolve, reject) => { // code to fetch data asynchronously // resolve with data if successful // reject with error if unsuccessful }); };
 
-fetchData() .then(data => { // do something with data when it's available }) .catch(error => { // handle error if something went wrong }); </code></pre>
+fetchData() .then(data => {
+  // do something with data when it's available }) .catch(error => { // handle error if something went wrong });
+```
 
 <p>In this example, the <code>fetchData</code> function returns a Promise that fetches data asynchronously. When the Promise is fulfilled, the <code>.then</code> method is called, and you can do something with the data. If the Promise is rejected, the <code>.catch</code> method is called, and you can handle the error.</p>
 
@@ -451,8 +469,9 @@ fetchData() .then(data => { // do something with data when it's available }) .ca
 <details>
     <summary>Callbacks</summary>
     <p>A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action</p>
-    <pre><code>
-    function add(a, b, callback) {
+
+  ```javascript
+  function add(a, b, callback) {
   let result = a + b;
   callback(result);
 }
@@ -462,7 +481,8 @@ console.log(`The result is ${result}.`);
 }
 
 add(5, 3, displayResult);
-</code></pre>
+```
+
 
  <p>In this example, the `add` function takes in two numbers `a` and b`, and a `callback` function callback. The `add` function computes the sum of `a` and `b`, and then calls the `callback` function with the result. </p>
 <p>
