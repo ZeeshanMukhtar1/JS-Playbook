@@ -593,4 +593,64 @@ console.log(myFunction(2, 3)); // Output: 5
 
 </details>
 
+<details><summary>Local Storage</summary>
+<p>Local storage is a web browser feature that allows developers to store data in a user's browser. It provides a way to store key-value pairs, similar to a JavaScript object. The data stored in local storage persists even after the browser is closed or the computer is restarted.</p>
+<p>Here is an example of how to use local storage in JavaScript:</p>
+
+```javascript
+// Storing data in local storage
+localStorage.setItem('username', 'Zeeshan');
+localStorage.setItem('age', '21');
+
+// Retrieving data from local storage
+const username = localStorage.getItem('username');
+const age = localStorage.getItem('age');
+
+console.log(username); // Output: Zeeshan
+console.log(age); // Output: 21
+
+// Updating data in local storage
+localStorage.setItem('age', '26');
+
+const updatedAge = localStorage.getItem('age');
+console.log(updatedAge); // Output: 26
+
+// Removing data from local storage
+localStorage.removeItem('username');
+
+const removedItem = localStorage.getItem('username');
+console.log(removedItem); // Output: null
+```
+
+<p>in the above example, we use the `localStorage` object to store and retrieve data. The `setItem` method is used to store key-value pairs, and the `getItem` method is used to retrieve the value associated with a given key. The `removeItem` method is used to remove a key-value pair from local storage.</p>
+</details>
+
+<details><summary>Session Storage</summary> <p>Session storage is a web browser feature that allows developers to store data in a user's browser for the duration of the session. The data stored in session storage remains accessible as long as the browser tab or window is open. Once the tab or window is closed, the session storage data is cleared.</p> <p>Here is an example of how to use session storage in JavaScript:</p>
+
+```javascript
+// Storing data in session storage
+sessionStorage.setItem('username', 'Zeeshan');
+sessionStorage.setItem('age', '21');
+
+// Retrieving data from session storage
+const username = sessionStorage.getItem('username');
+const age = sessionStorage.getItem('age');
+
+console.log(username); // Output: Zeeshan
+console.log(age); // Output: 21
+
+// Updating data in session storage
+sessionStorage.setItem('age', '26');
+
+const updatedAge = sessionStorage.getItem('age');
+console.log(updatedAge); // Output: 26
+
+// Removing data from session storage
+sessionStorage.removeItem('username');
+
+const removedItem = sessionStorage.getItem('username');
+console.log(removedItem); // Output: null
+```
+
+<p>In the above example, we use the `sessionStorage` object to store and retrieve data. The `setItem` method is used to store key-value pairs, and the `getItem` method is used to retrieve the value associated with a given key. The `removeItem` method is used to remove a key-value pair from session storage.</p> </details>
 If you found this repo helpful, please consider giving it a star 🌟 to help other students discover it and benefit from it as well. Thank you for your support!
