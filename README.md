@@ -653,4 +653,52 @@ console.log(removedItem); // Output: null
 ```
 
 <p>In the above example, we use the `sessionStorage` object to store and retrieve data. The `setItem` method is used to store key-value pairs, and the `getItem` method is used to retrieve the value associated with a given key. The `removeItem` method is used to remove a key-value pair from session storage.</p> </details>
+
+<details><summary>Event Loop</summary>
+The event loop is a fundamental mechanism in JavaScript that handles the execution of asynchronous code. It is responsible for managing the order of execution, handling events, and ensuring that JavaScript's single-threaded nature is maintained while still allowing non-blocking operations.
+
+Here is a basic outline of how the event loop works in JavaScript:
+
+1. **Call Stack**: It keeps track of the currently executing function or task. When code is executed, it is added to the call stack. When a function completes, it is removed from the stack.
+
+2. **Event Queue**: It holds the asynchronous tasks and events that are ready to be processed. When an asynchronous task completes, it is added to the event queue.
+
+The event loop follows a continuous cycle, which can be broken down into the following steps:
+
+1. The main thread executes synchronous code, and functions are added to the call stack. Execution continues until there is no more synchronous code to execute.
+
+2. When an asynchronous operation, such as making an API request or setting a timeout, is encountered, it is handed off to the browser's Web APIs. The asynchronous task completes independently, outside of the main thread.
+
+3. Once the asynchronous task is complete, it is pushed into the event queue.
+
+4. The event loop constantly checks if the call stack is empty. If it is, the event loop takes the first task in the event queue and moves it to the call stack.
+
+5. The task from the event queue is executed, and any synchronous code within it is added to the call stack.
+
+6. The cycle continues as long as there are tasks in the event queue and the call stack becomes empty.
+
+Understanding the event loop is crucial for writing efficient JavaScript code that handles asynchronous tasks effectively. By leveraging the event loop, developers can create responsive web applications and manage complex operations without blocking the main thread.
+
+#### Benefits of the event loop:
+
+- **Non-blocking behavior**: Asynchronous tasks can be executed in the background while the main thread continues to execute other code without waiting.
+
+- **Responsiveness**: The event loop ensures that the user interface remains responsive, even when time-consuming tasks are running in the background.
+
+- **Concurrency**: By offloading tasks to separate threads or processes and using callback functions or promises, multiple operations can run simultaneously.
+
+- **Avoiding deadlock**: As JavaScript is single-threaded, the event loop prevents deadlocks that can occur if operations are blocked and waiting for each other indefinitely.
+</details>
+<details><summary>What are Web APIs?</summary>
+Web APIs enable developers to access and manipulate web-based features and functionality, such as retrieving data from a server, modifying the Document Object Model (DOM), or making asynchronous requests. They provide a standardized way for developers to interact with web-based resources and services.
+
+Here are a few commonly used Web APIs in web development:
+
+1. **DOM API**: The Document Object Model (DOM) API allows developers to access and manipulate HTML elements and their attributes within a web page. It provides methods and properties to dynamically modify the content and structure of a web page.
+
+2. **XMLHttpRequest API**: The XMLHttpRequest API enables developers to send HTTP requests to a server and receive responses. It is commonly used for making asynchronous requests to fetch data from an API or send data to a server without reloading the whole web page.
+3. **Fetch API**: The Fetch API is a modern alternative to the XMLHttpRequest API that provides a more powerful and flexible way to make HTTP requests. It uses Promises to handle asynchronous operations and offers a simplified syntax for fetching resources.
+4. **LocalStorage and sessionStorage APIs**: These APIs provide a way to store key-value pairs locally in the browser. They allow developers to persist data on the client-side, even after the page is refreshed or closed.
+</details>
+
 If you found this repo helpful, please consider giving it a star 🌟 to help other students discover it and benefit from it as well. Thank you for your support!
