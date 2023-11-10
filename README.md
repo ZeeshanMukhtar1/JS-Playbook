@@ -1,10 +1,6 @@
 ## Mastering the Basics of JavaScript
 
 <details>
-  <summary>Introduction to JavaScript</summary>
-  <p>JavaScript is a programming language that is used for creating interactive websites and web applications. It is used to add interactivity, dynamic content, and user interface effects to web pages.</p>
-</details>
-<details>
 <summary>What is a variable in JavaScript?</summary>
 <p>A variable is a container for storing a value. In JavaScript, you can declare a variable using the <code>var</code>, <code>let</code>, or <code>const</code> keywords. For example:</p>
 
