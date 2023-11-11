@@ -148,73 +148,7 @@ Object literal notation is a way to create an object in JavaScript by listing it
 Primitive values in JavaScript are the basic data types, such as numbers, strings, booleans, null, and undefined. They are <a href="https://developer.mozilla.org/en-US/docs/Glossary/Immutable">immutable </a>and are stored directly in memory.
 </p>
 </details>
-<details> <summary>Objects in JavaScript</summary>
 
-<p>Objects in JavaScript are like containers that hold related data and functionality in key-value pairs. Imagine a box that contains things related to a particular thing, that’s what an object is. Each value in an object is called a property, and a property can be a primitive value like a string, number, or boolean, an object or even a function. Objects are widely used in JavaScript, and having a good understanding of objects is crucial for becoming a successful JavaScript developer.</p>
-
-<p>To create an object in JavaScript, we use the object literal notation. It looks like a set of braces enclosing key-value pairs, separated by commas. Here’s an example:</p>
-
-```javascript
-const zeeshan = { name: “Zeeshan”,
- age: 21,
-  hobbies: [“reading”, “writing”, “coding”],
-  greeting: function() {
-    console.log("Hello, my name is " + this.name);
-     } };
-```
-
-<p>In this example, we’ve created an object called `zeeshan` that has several properties, including `name`, `age`, `hobbies`, and `greeting`. The `greeting` property is a `function` that can be called on the `object`.</p>
-
-<p>You can access the properties of an object using dot notation or bracket notation. Here are some examples:</p>
-
-```javascript
- console.log(zeeshan.name); // Output: “Zeeshan”
-console.log(zeeshan[“age”]); // Output: 21
-
-```
-<p>You can also add or modify properties on an object using either dot notation or bracket notation. Here’s an example:</p>
-
-```javascript
- zeeshan.job = “Bechlor Student”;
- zeeshan[“location”] = “Pakistan”;
-
-```
-<p>Objects in JavaScript are very powerful and can be used to represent complex data structures. Understanding how to create and manipulate objects is an essential skill for any JavaScript developer.</p> </details>
-<details> <summary>Strings</summary>
-A string is a sequence of characters enclosed in single quotes (‘’) or double quotes (“”). For example:
-
-```javascript
-const myString = 'Hello, Zeeshan!'; // using string literal
-const anotherString = String('I am a string'); // using String() constructor
-```
-
-Strings are <a href="https://developer.mozilla.org/en-US/docs/Glossary/Immutable">immutable </a>, which means that their contents cannot be changed once created. However, you can create a new string based on the original string using string methods such as `slice()`, `concat()`, `replace()`, and others. For example:
-
-```javascript
-const myString = 'Hello, Zeeshan!';
-const newString = myString.slice(0, 5); // returns 'Hello'
-const concatenatedString = myString.concat(' How are you?'); // returns 'Hello, Zeeshan! How are you?'
-const replacedString = myString.replace('Zeeshan', 'universe'); // returns 'Hello, universe!'
-```
-
-You can also access individual characters of a string using bracket notation. For example:
-
-```javascript
-const myString = 'Hello, Zeeshan!';
-const firstCharacter = myString[0]; // returns 'H'
-const lastCharacter = myString[myString.length - 1]; // returns '!'
-```
-
-JavaScript provides many built-in string methods that you can use to manipulate and work with strings. Some of the most commonly used methods include `toUpperCase()`, `toLowerCase()`, `trim()`, `split()`, `charAt()`, and others. For example:
-
-```javascript
-const myString = ' Hello, Zeeshan! ';
-const uppercaseString = myString.toUpperCase(); // returns ' HELLO, Zeeshan! '
-const lowercaseString = myString.toLowerCase(); // returns ' hello, Zeeshan! '
-const trimmedString = myString.trim(); // returns 'Hello, Zeeshan!'
-const splitString = myString.split(','); // returns [' Hello', ' Zeeshan! ']
-const thirdCharacter = myString.charAt(2); // returns 'H'
-```
 
 </details>
 <details> <summary>Arrays in JavaScript</summary> <p>
