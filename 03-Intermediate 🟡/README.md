@@ -7,3 +7,5 @@
 3. **[Closures](03-Closures.ipynb):** In this notebook, we will learn about closures in JavaScript.
 
 4. **[This Keyword](04-This-Keyword.ipynb):** In this notebook, we will learn about `this` keyword in JavaScript.
+
+5. **[Promises](05-Promises.ipynb):** In this notebook, we will learn about promises in JavaScript.
