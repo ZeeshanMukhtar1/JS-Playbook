@@ -9,3 +9,5 @@
 4. **[This Keyword](04-This-Keyword.ipynb):** In this notebook, we will learn about `this` keyword in JavaScript.
 
 5. **[Promises](05-Promises.ipynb):** In this notebook, we will learn about promises in JavaScript.
+
+6. **[Async Await](06-Async-Await.ipynb):** In this notebook, we will learn about async await in JavaScript.
