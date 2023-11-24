@@ -8,6 +8,10 @@
 
 4. **[Closures](./05-Closures.ipynb):** In this notebook, we will learn about closures in JavaScript.
 
+5. **[Advance Objects ](./03-Advance-objects.ipynb):** In this notebook, we will learn about advance objects in JavaScript.
+
+6. **[Advance Arrays ](./04-Advance-Arrays.ipynb):** In this notebook, we will learn about advance arrays in JavaScript.
+
 ## Further Reading: API Mastery 📘
 
 For a comprehensive guide on APIs, exploring their methods, best practices, and potential pitfalls, consider checking out the book titled **API Mastery**. You can find the detailed content in the [API Mastery](https://github.com/ZeeshanMukhtar1/JS-Playbook/raw/main/Assets/API-Mastery.pdf) of this repository.
