@@ -4,7 +4,7 @@
 
 2. **[Strict-Mode Web-APIs ](02-Strict-Mode-and-Web-APIs.ipynb):** Learn how to use strict mode and the Web APIs.
 
-3. **[Promises](./04-Promises.ipynb):** In this notebook, we will learn about promises in JavaScript.
+3. **[Promises](./06-Promises.ipynb):** In this notebook, we will learn about promises in JavaScript.
 
 4. **[Closures](./05-Closures.ipynb):** In this notebook, we will learn about closures in JavaScript.
 
