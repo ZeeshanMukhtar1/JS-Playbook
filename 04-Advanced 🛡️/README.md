@@ -4,7 +4,7 @@
 
 2. **[Strict-Mode Web-APIs ](02-Strict-Mode-and-Web-APIs.ipynb):** Learn how to use strict mode and the Web APIs.
 
-3. **[Promises](./06-Promises.ipynb):** In this notebook, we will learn about promises in JavaScript.
+3. **[Javascript async Behaviour](./06-javascript-async-nature.ipynb):** In this notebook, we will learn about the async nature of JavaScript and how to handle it using callbacks, promises, and async/await.
 
 4. **[Closures](./05-Closures.ipynb):** In this notebook, we will learn about closures in JavaScript.
 
