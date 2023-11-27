@@ -14,7 +14,19 @@ Greetings, fellow coder! Welcome to our JavaScript Playbook, an immersive learni
 
 2. **[Basics 🟢](./02-Basics)**
 
-   - [JS Basic Concepts](./02-Basics%20🟢/README.md) - Uncover the basics of JavaScript Variables, Functions, data types, and more.
+   - [Variables ](./02-Basics%20🟢/01-Variables.ipynb) - Learn how to use variables in JavaScript to store and manage information in your code. It's like giving names to things so your code can remember them!
+
+   - [Data Types ](./02-Basics%20🟢/02-Data-Types.ipynb) - Discover the different types of data in JavaScript, from numbers to words. This notebook breaks down the basics of data types and how they help your code understand and work with information.
+
+   - [Functions ](./02-Basics%20🟢/03-Functions.ipynb) - Get the lowdown on functions in JavaScript! They're like mini-programs that you can create to perform specific tasks. This notebook explains the basics, including the cool arrow functions that make your code look sleek.
+
+   - [Conditionals ](./02-Basics%20🟢/04-Conditionals.ipynb) - Ever wanted your code to make decisions? This notebook introduces conditionals, which allow your code to take different paths based on certain conditions. It's like teaching your code to think!
+
+   - [Operators ](./02-Basics%20🟢/04-Conditionals.ipynb) - Dive into the world of operators! These special symbols help you do all sorts of things in JavaScript, from basic math to making decisions in your code. Learn the basics in this notebook.
+
+   - [Loops ](./02-Basics%20🟢/06-Loops.ipynb) - Explore the power of loops in JavaScript. They're like your code's way of saying, "Let's do this again!" This notebook breaks down the basics of loops and how they help you repeat tasks with ease.
+
+These notebooks are your go-to guides for mastering the basics of JavaScript. Click on the links to delve into each topic and level up your coding skills! 🚀
 
 3. **[Intermediate Concepts 🟡](./03-Intermediate%20🟡/README.md)**
 
