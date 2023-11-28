@@ -26,11 +26,30 @@ Greetings, fellow coder! Welcome to our JavaScript Playbook, an immersive learni
 
    - [Loops ](./02-Basics%20🟢/06-Loops.ipynb) - Explore the power of loops in JavaScript. They're like your code's way of saying, "Let's do this again!" This notebook breaks down the basics of loops and how they help you repeat tasks with ease.
 
-These notebooks are your go-to guides for mastering the basics of JavaScript. Click on the links to delve into each topic and level up your coding skills! 🚀
+3. **[Intermediate Concepts 🟡](./03-Intermediate%20🟡/README.)**
 
-3. **[Intermediate Concepts 🟡](./03-Intermediate%20🟡/README.md)**
+- **[Objects](./03-Intermediate%20🟡/01-Objects.ipynb)**
 
-   - [Intermidiate ](./03-Intermediate/README.md.ipynb) - Explore intermediate JavaScript concepts, including Objects, Arrays, and more.
+  - Explore the fascinating world of JavaScript objects! They're like containers that can hold various types of information. Learn how to create and manipulate objects to organize your code effectively.
+
+- **[Arrays](./03-Intermediate%20🟡/02-Arrays.ipynb)**
+
+  - Dive into the versatility of arrays in JavaScript. These are like lists that can store multiple pieces of data. Discover how to work with arrays, from adding and removing elements to looping through them.
+
+- **[Nullish Coalescing](./03-Intermediate%20🟡/03-Nullish-Coalescing.ipynb)**
+
+  - Uncover the power of nullish coalescing in JavaScript! This handy feature helps you handle cases where values might be undefined or null. Learn how to use it to make your code more robust and concise.
+
+- **[This Keyword](./03-Intermediate%20🟡/04-This-Keyword.ipynb)**
+
+  - Understand the mysterious "this" keyword in JavaScript. It plays a crucial role in functions and objects. This notebook demystifies "this" and shows you how to use it effectively in your code.
+
+- **[Async Await Basics](./03-Intermediate%20🟡/05-Async-Await.ipynb)**
+
+  - Step into the asynchronous world of JavaScript with async/await! This powerful duo simplifies working with asynchronous code. Learn the basics of how to handle promises with async functions and make your code more readable.
+
+- **[IIFE](./03-Intermediate%20🟡/06-IIFE.ipynb)**
+  - Discover the concept of Immediately Invoked Function Expressions (IIFE). They're like ninja functions that execute as soon as they're defined. This notebook shows you how IIFE can be a powerful tool for encapsulating code and avoiding global scope pollution.
 
 4. **[Advanced 🛡️](./04-Advanced)**
 
