@@ -6,13 +6,13 @@ Greetings, fellow coder! Welcome to our JavaScript Playbook, an immersive learni
 
 ## Table of Contents
 
-1. **[Introduction 📚](./01-Introduction)**
+1. **[Introduction 📚](./01-Introduction%20📚/README.md)**
 
    - **[OverView ](01-Overview.ipynb):** This notebook gives an overview of the course and the Environment setup.
 
    - [Why We Should Learn JavaScript](02-Why-JavaScript.ipynb) : This notebook explains why JavaScript is a useful and relevant programming language to learn in 2k23-24.
 
-2. **[Basics 🟢](./02-Basics)**
+2. **[Basics 🟢](./02-Basics%20🟢/README.md)**
 
    - [Variables ](./02-Basics%20🟢/01-Variables.ipynb) - Learn how to use variables in JavaScript to store and manage information in your code. It's like giving names to things so your code can remember them!
 
@@ -26,7 +26,7 @@ Greetings, fellow coder! Welcome to our JavaScript Playbook, an immersive learni
 
    - [Loops ](./02-Basics%20🟢/06-Loops.ipynb) - Explore the power of loops in JavaScript. They're like your code's way of saying, "Let's do this again!" This notebook breaks down the basics of loops and how they help you repeat tasks with ease.
 
-3. **[Intermediate Concepts 🟡](./03-Intermediate%20🟡/README.)**
+3. **[Intermediate Concepts 🟡](./03-Intermediate%20🟡/README.md.)**
 
 - **[Objects](./03-Intermediate%20🟡/01-Objects.ipynb)**
 
@@ -51,9 +51,30 @@ Greetings, fellow coder! Welcome to our JavaScript Playbook, an immersive learni
 - **[IIFE](./03-Intermediate%20🟡/06-IIFE.ipynb)**
   - Discover the concept of Immediately Invoked Function Expressions (IIFE). They're like ninja functions that execute as soon as they're defined. This notebook shows you how IIFE can be a powerful tool for encapsulating code and avoiding global scope pollution.
 
-4. **[Advanced 🛡️](./04-Advanced)**
+4. **[Advanced 🛡️](./04-Advanced%20🛡️/README.md)**
 
-   - [Visualizing Promises](./04-Advanced%20🛡️/README.md) - Gain insights into the visual representation of Promises , Async/Await, and more.
+- **[Modules & ES6](./04-Advanced%20🛡️/01-Modules-and-ES6.ipynb)**
+
+  - Delve into the world of modern JavaScript with ES6 and modules! This notebook guides you through the latest features in ECMAScript 6, enhancing your understanding of modules for more organized and efficient code.
+
+- **[JS Strict Mode](./04-Advanced%20🛡️/02-Strict-Mode-and-Web-APIs.ipynb)**
+
+  - Uncover the power of strict mode in JavaScript. This notebook explains how strict mode can help you catch common coding mistakes and improve the overall quality of your code.
+
+- **[Advanced Objects](./04-Advanced%20🛡️/03-Advanced-Objects.ipynb)**
+
+  - Elevate your mastery of JavaScript objects! This notebook goes beyond the basics, exploring advanced techniques for working with objects. Discover how to use object destructuring, spread syntax, and other powerful features to make your code more efficient.
+
+- **[Advanced Arrays](./04-Advanced%20🛡️/04-Advanced-Arrays.ipynb)**
+
+  - Take your skills with arrays to the next level! This notebook introduces advanced array methods and techniques that can simplify complex operations. Discover how to use map, filter, reduce, and other powerful array functions to enhance your code.
+
+- **[Closures](./04-Advanced%20🛡️/05-Closures.ipynb)**
+
+  - Unravel the mystery of closures in JavaScript. This notebook explains how closures work and why they are useful. Gain a deep understanding of the relationship between functions and the variables they can access, even after they've finished executing.
+
+- **[Async Nature of JS](./04-Advanced%20🛡️/06-Javascript-Async-Nature.ipynb)**
+  - Navigate the asynchronous landscape of JavaScript! This notebook explores the asynchronous nature of JavaScript, covering concepts like the event loop and promises. Understand how to write code that efficiently handles asynchronous tasks, making your applications more responsive.
 
 5. **[Browser Development 🌐](./05-Browser-Development)**
 
