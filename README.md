@@ -120,7 +120,13 @@ Greetings, fellow coder! Welcome to our JavaScript Playbook, an immersive learni
 
 6. **[Next-Level Techniques](./06-Next-Level-Techniques) 🚀**
 
-   - [Unlocking the Power of Calls](./06-Next-Level-Techniques%20🚀): Harness the potent capabilities of JavaScript function calls.
+   - **[Extending Prototype with Custom Methods](./06-Next-Level-Techniques%20🚀/Js-prototype-extension.ipynb)**
+
+     - Explore techniques for extending JavaScript prototypes with custom methods.
+
+   - **[Call Method](./06-Next-Level-Techniques%20🚀/Call-method.ipynb)**
+
+     - Learn about the "Call" method and its applications in JavaScript.
 
 7. **[Projects](./07-Projects) 🚧**
 
