@@ -146,8 +146,13 @@ Greetings, fellow coder! Welcome to our JavaScript Playbook, an immersive learni
 
 11. **[Memory Management](./Memory-Management/JS-Playbook) 🧠**
 
-    - [01-Stack](./Memory%20Management%20🧠/): Learn about the stack in memory management.
-    - [02-Heap](./Memory-Management/JS-Playbook/02-Heap.ipynb): Explore the heap in memory management.
+    - **[01-Stack](./Memory%20Management%20🧠/)**
+
+      - Explore the stack in memory management and how it works.
+
+    - **[02-Heap](./Memory-Management/JS-Playbook/02-Heap.ipynb)**
+
+      - Understand the heap in memory management and how it works.
 
 12. **[LICENSE](./LICENSE) 📜**
     - [License Information](./LICENSE): Review the licensing details for this repository.
