@@ -140,11 +140,15 @@ Greetings, fellow coder! Welcome to our JavaScript Playbook, an immersive learni
 
    - [Final Thoughts and Reflections](./09-Conclusion/README.md): Wrap up your JavaScript adventure with insightful reflections.
 
-10. **[Assets](./Assets) 🛠️**
+10. **[Interview Preparation](./10-interview-preparation%20🎓/) 🎯**
+
+- [Interview Preparation](./10-interview-preparation%20🎓/README.md): Prepare for JavaScript interviews with a comprehensive guide.
+
+11. **[Assets](./Assets) 🛠️**
 
     - [Arrays Asset and Advanced Arrays](./Assets/Arrays): Supplement your learning with valuable assets.
 
-11. **[Memory Management](./Memory-Management/JS-Playbook) 🧠**
+12. **[Memory Management](./Memory-Management/JS-Playbook) 🧠**
 
     - **[01-Stack](./Memory%20Management%20🧠/)**
 
@@ -154,7 +158,7 @@ Greetings, fellow coder! Welcome to our JavaScript Playbook, an immersive learni
 
       - Understand the heap in memory management and how it works.
 
-12. **[LICENSE](./LICENSE) 📜**
+13. **[LICENSE](./LICENSE) 📜**
     - [License Information](./LICENSE): Review the licensing details for this repository.
 
 ## Connect with Me
